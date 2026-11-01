@@ -35,6 +35,7 @@
 
 ## 4. Index & Book List (00_索引)
 
+- [User Manual](<00_索引/用户操作手册.md>) — how to browse the repo, read the three formats, follow a learning path, import Baidu mind maps, run the sample project, and FAQ.
 - [Knowledge Base Index](<00_索引/知识库索引.md>) — full overview of repository files (including `.docx` versions).
 - [Knowledge Base Inventory.csv](<00_索引/知识库清单.csv>) — a per-file complete inventory.
 - [Book List](<00_索引/书籍清单.md>) — a reading list of 44 classic books (PDFs not included).
