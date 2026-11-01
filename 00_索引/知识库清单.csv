@@ -1,8 +1,8 @@
 ﻿方向,子目录,相对路径,文件名,扩展名,大小(字节),大小(可读),类型
 README.md,,README.md,README.md,.md,349,349 B,元数据
 00_索引,,00_索引\知识库清单.csv,知识库清单.csv,.csv,0,0 B,索引
-00_索引,,00_索引\知识库索引.docx,知识库索引.docx,.docx,40205,39.26 KB,索引
-00_索引,,00_索引\知识库索引.md,知识库索引.md,.md,7347,7.17 KB,索引
+00_索引,,00_索引\知识库索引.docx,知识库索引.docx,.docx,40221,39.28 KB,索引
+00_索引,,00_索引\知识库索引.md,知识库索引.md,.md,7531,7.35 KB,索引
 01_Java,书籍,01_Java\书籍\Effective Java 中文第二版.pdf,Effective Java 中文第二版.pdf,.pdf,60679487,57.87 MB,资料
 01_Java,书籍,01_Java\书籍\Essential Java.《Java 编程要点》.pdf,Essential Java.《Java 编程要点》.pdf,.pdf,2318345,2.21 MB,资料
 01_Java,书籍,01_Java\书籍\Head First Java中文版.pdf,Head First Java中文版.pdf,.pdf,59893292,57.12 MB,资料
@@ -102,8 +102,13 @@ README.md,,README.md,README.md,.md,349,349 B,元数据
 01_Java,进阶专题,01_Java\进阶专题\深入理解Java虚拟机：JVM高级特性与最佳实践（第3版） 周志明.pdf,深入理解Java虚拟机：JVM高级特性与最佳实践（第3版） 周志明.pdf,.pdf,31490889,30.03 MB,资料
 01_Java,面试与简历,01_Java\面试与简历\Java面试题整理（精编版）.docx,Java面试题整理（精编版）.docx,.docx,50640,49.45 KB,资料
 01_Java,面试与简历,01_Java\面试与简历\Java面试题整理（精编版）.md,Java面试题整理（精编版）.md,.md,25667,25.07 KB,资料
-02_Go,笔记与面试,02_Go\笔记与面试\Go知识笔记合集（整理版）.docx,Go知识笔记合集（整理版）.docx,.docx,54255,52.98 KB,资料
-02_Go,笔记与面试,02_Go\笔记与面试\Go知识笔记合集（整理版）.md,Go知识笔记合集（整理版）.md,.md,31750,31.01 KB,资料
+02_Go,,02_Go\Go常用框架与实战指南.docx,Go常用框架与实战指南.docx,.docx,43594,42.57 KB,资料
+02_Go,,02_Go\Go常用框架与实战指南.md,Go常用框架与实战指南.md,.md,10436,10.19 KB,资料
+02_Go,,02_Go\Go知识笔记合集（整理版）.docx,Go知识笔记合集（整理版）.docx,.docx,54255,52.98 KB,资料
+02_Go,,02_Go\Go知识笔记合集（整理版）.md,Go知识笔记合集（整理版）.md,.md,31750,31.01 KB,资料
+02_Go,,02_Go\Go面试题（精编版）.docx,Go面试题（精编版）.docx,.docx,44887,43.83 KB,资料
+02_Go,,02_Go\Go面试题（精编版）.md,Go面试题（精编版）.md,.md,13345,13.03 KB,资料
+02_Go,,02_Go\README.md,README.md,.md,1272,1.24 KB,元数据
 03_Rust,,03_Rust\README.md,README.md,.md,1693,1.65 KB,元数据
 03_Rust,,03_Rust\Rust常用框架与实战指南.docx,Rust常用框架与实战指南.docx,.docx,44210,43.17 KB,资料
 03_Rust,,03_Rust\Rust常用框架与实战指南.md,Rust常用框架与实战指南.md,.md,11699,11.42 KB,资料
