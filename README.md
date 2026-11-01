@@ -14,6 +14,9 @@
 
 ### Rust
 - [Rust 知识笔记合集（整理版）](<03_Rust/Rust知识笔记合集（整理版）.md>) — 共 17 章：工具链、基础语法、所有权、借用与生命周期、结构体/枚举/模式匹配、集合、错误处理、泛型与 Trait、闭包与迭代器、智能指针、并发、异步、模块与 Cargo、Unsafe 与宏、与 Java/Go 对比、高频面试题。
+- [Rust 面试题（精编版）](<03_Rust/Rust面试题（精编版）.md>) — 55 道高频问答 + 7 道代码题。
+- [Rust 常用框架与实战指南](<03_Rust/Rust常用框架与实战指南.md>) — Tokio / Axum 0.8 / Actix-web 4 / sqlx / serde / tracing / tower-http、分层结构与部署。
+- [axum-todo-api 示例项目](<03_Rust/示例项目/axum-todo-api>) — Axum 0.8 + Tokio 最小 REST API（可直接 `cargo run`）。
 
 ### 索引与书单
 - [知识库总索引](<00_索引/知识库索引.md>) — 完整目录结构与统计。
@@ -35,7 +38,10 @@ programming-knowledge-base/
 │  └─ 笔记与面试/      Go知识笔记合集（整理版）.md / .docx
 └─ 03_Rust/
    ├─ README.md
-   └─ Rust知识笔记合集（整理版）.md / .docx
+   ├─ Rust知识笔记合集（整理版）.md / .docx
+   ├─ Rust面试题（精编版）.md / .docx
+   ├─ Rust常用框架与实战指南.md / .docx
+   └─ 示例项目/axum-todo-api/   Axum 0.8 REST API 源码
 ```
 
 ## 关于书籍 PDF
