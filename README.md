@@ -1,5 +1,7 @@
 # 编程知识库（Java / Go / Rust）
 
+<p align="center">🌐 <b>Language</b>：<a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ru.md">Русский</a> · <a href="README.es.md">Español</a> · <a href="README.fr.md">Français</a> · <a href="README.de.md">Deutsch</a> · <a href="README.pt-BR.md">Português</a></p>
+
 > 面向后端开发的个人知识库，按 **Java / Go / Rust** 三大方向整理。内容以 **Markdown 文档**为主（每份附同名 Word `.docx`），并包含百度脑图思维导图与示例项目；书籍 PDF 因体积与版权原因不随仓库提供（见 [书籍清单](<00_索引/书籍清单.md>)）。
 >
 > 整理日期：2026-11-01
