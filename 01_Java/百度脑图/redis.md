@@ -1,0 +1,35 @@
+# redis
+
+- Redis基础
+  - 数据结构 String、Hash、List、Set、SortedSet
+    - HyperLogLog、Geo、Pub/Sub loomFilter，RedisSearch，Redis-ML
+  - 避免缓存击穿的利器BloomFilter（布隆过滤器）
+  - Redis分布式锁
+    - 先拿setnx来争抢锁，抢到之后，再用expire给锁加一个过期时间防止锁忘记了释放。
+      - 进程意外crash或者要重启维护了把setnx和expire合成一条指令来用的
+  - Redis做异步队列么
+    - 一般使用list结构作为队列，rpush生产消息，lpop消费消息。当lpop没有消息的时候，要适当sleep一会再重试
+    - 不用sleep呢？list还有个指令叫blpop，在没有消息的时候，它会阻塞住直到消息到来
+    - 能不能生产一次消费多次呢？ 使用pub/sub主题订阅者模式，可以实现 1:N 的消息队列
+    - pub/su b有什么缺点？ 在消费者下线的情况下，生产的消息会丢失，得使用专业的消息队列如RocketMQ等
+    - Redis如何实现延时队列？
+      - 使用sortedset，拿时间戳作为score，消息内容作为key调用zadd来生产消息，消费者用zrangebyscore指令获取N秒之前的数据轮询进行处理
+  - Redis是怎么持久化
+    - AOF做增量持久化。因为RDB会耗费较长时间，不够实时大量丢失数据，所以需要AOF来配合使用
+  - Pipeline有什么好处
+    - 可以将多次IO往返的时间缩减为一次，前提是pipeline执行的指令之间没有因果相关性
+  - Redis集群
+    - Redis Sentinal 着眼于高可用，在master宕机时会自动将slave提升为master，继续提供服务
+    - Redis Cluster 着眼于扩展性，在单个redis内存不足时，使用Cluster进行分片存储。
+- 系列-缓存雪崩、击穿、穿透
+  - 雪崩
+    - 如果所有首页的Key全部失效，批量往Redis存数据的时候，把每个Key的失效时间都加个随机值就好了
+  - 缓存穿透是指缓存和数据库中都没有的数据
+    - 业务校验id自增的话大于id最大值的直接返回，
+    - Redis还有一个高级用法布隆过滤器（Bloom Filter）这个也能很好的防止缓存穿透的发生
+  - 缓存击穿
+    - 设置热点数据永远不过期。或者加上互斥锁就能搞定了
+- Redis哨兵、持久化、主从、手撕LRU
+  - redis的他是单线程的，但是，我们可以通过在单机开多个Redis实例嘛
+  - 我们用到了集群的部署方式也就是Redis cluster，并且是主从同步读写分离，类似Mysql的主从同步，Redis cluster 支撑 N 个 Redis master node，每个master node都可以挂载多个 slave node
+  - RDB：RDB 持久化机制，是对 Redis 中的数据执行周期性的持久化。 AOF：AOF 机制对每条写入命令作为日志，以 append-only 的模式写入一个日志文件中，因为这个模式是只追加的方式，所以没有任何磁盘寻址的开销，所以很快，有点像Mysql中的binlog

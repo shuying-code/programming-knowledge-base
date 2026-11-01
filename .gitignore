@@ -1,0 +1,5 @@
+*.pdf
+*.xmind
+~$*
+.DS_Store
+Thumbs.db
